@@ -1,0 +1,106 @@
+source 'https://rubygems.org'
+ruby '2.2.3'
+gem 'rails', '~> 4.1.1'
+
+# We're using master to test adding ENABLE=BROKEN to the connection string
+gem 'ruby-oci8', git: 'https://github.com/kubo/ruby-oci8.git'
+gem 'activerecord-oracle_enhanced-adapter', '~> 1.5.0'
+gem 'will_paginate'
+gem 'lazy_high_charts'
+gem 'compass-rails', '~> 1.1.2'
+gem 'sass-rails', '~> 4.0.0'
+gem 'compass', '~> 0.12.3'
+gem 'quiet_assets'
+gem 'puma'
+gem 'rack-cors', require: 'rack/cors'
+gem 'autonumeric-rails'
+gem 'bootstrap-x-editable-rails'
+gem 'jquery-datatables-rails'
+gem 'rails-datatables'
+gem 'ancestry'
+gem 'twilio-ruby'
+gem 'sendgrid-ruby'
+gem 'oauth2', git: 'https://@github.com/bla/oauth2.git'
+gem 'omniauth'
+gem 'omniauth-salesforce', git: 'https://github.com/bla/omniauth-salesforce.git'
+gem 'omniauth-yammer'
+gem 'yam'
+gem 'cancancan', '~> 1.7'
+gem 'databasedotcom', git: 'https://github.com/bla/databasedotcom.git'
+gem 'uglifier', '>= 1.3.0'
+gem 'coffee-rails', '~> 4.0.0'
+gem 'jquery-rails'
+gem 'jbuilder', '~> 1.2'
+gem 'google-analytics-rails'
+gem 'simple_form'
+gem 'rack-jwt', git: 'https://github.com/bla/rack-jwt.git'
+gem 'redis', '~>3.3.3'
+
+gem 'awesome_print'
+gem 'rails_semantic_logger'
+
+group :doc do
+  # bundle exec rake doc:rails generates the API under doc/api.
+  gem 'sdoc', require: false
+end
+
+group :development, :test do
+  gem 'pry-byebug'
+  gem 'rspec-rails', '~> 3.0'
+  gem 'rack_session_access'
+  gem 'pilfer'
+  gem 'spring'
+  gem 'spring-commands-rspec'
+  gem 'spring-commands-cucumber'
+  gem 'dotenv-rails'
+end
+
+group :development do
+  gem 'brakeman', :require => false
+  gem 'pg'
+end
+
+group :test do
+  gem 'webmock'
+  gem 'factory_girl_rails'
+  gem 'capybara'
+  gem 'guard-rspec'
+  gem 'faker'
+  gem 'simplecov'
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
+  gem 'launchy'
+  gem 'pdf-inspector', :require => 'pdf/inspector'
+  gem 'timecop'
+end
+
+group :production do
+  gem 'rails_12factor'
+end
+
+gem 'capistrano', '~> 3.1.0'
+gem 'capistrano-bundler', '~> 1.1.2'
+gem 'capistrano-rails', '~> 1.1.1'
+gem 'capistrano3-nginx', '~> 2.0'
+gem 'capistrano-thin'
+gem 'slackistrano', git: 'https://github.com/phallstrom/slackistrano.git', tag: 'v2.0.1'
+gem 'sprockets', '2.11.0' # 2.12.0 is broken
+gem 'sprockets-rails'
+gem 'composite_primary_keys'
+gem 'paper_trail', '~> 5.2.0'
+gem 'fiscali'
+gem 'prawn'
+gem 'prawnto_2', :require => 'prawnto'
+gem 'prawn-table'
+gem 'whenever', :require => false
+gem 'angularjs-rails'
+gem 'newrelic_rpm'
+gem 'dalli'
+gem 'bitmask_attributes'
+gem 'roo', '~> 1.13.2'
+gem 'rubyzip', '~> 0.9.9'
+gem 'axlsx', '~> 2.0'
+gem 'acts_as_xlsx'
+gem 'axlsx_rails', '~> 0.1.5'
+gem 'kaminari'
+gem 'honeybadger'
